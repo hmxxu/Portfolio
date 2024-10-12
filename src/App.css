@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+:root {
+  --app-gray-default: #ffffff;
+  --app-gray-50: #f9fafb;
+  --app-gray-100: #f3f4f6;
+  --app-gray-200: #e5e7eb;
+  --app-gray-300: #d1d5db;
+  --app-gray-400: #9ca3af;
+  --app-gray-500: #6b7280;
+  --app-gray-600: #4b5563;
+  --app-gray-700: #374151;
+  --app-gray-800: #1f2937;
+  --app-gray-900: #111827;
+  --app-gray-950: #030712;
+  --app-info-box: #ffffff;
+}
+
+.dark {
+  --app-gray-default: #030712;
+  --app-gray-50: #111827;
+  --app-gray-100: #1f2937;
+  --app-gray-200: #374151;
+  --app-gray-300: #4b5563;
+  --app-gray-400: #6b7280;
+  --app-gray-500: #9ca3af;
+  --app-gray-600: #d1d5db;
+  --app-gray-700: #e5e7eb;
+  --app-gray-800: #f3f4f6;
+  --app-gray-900: #f9fafb;
+  --app-gray-950: #ffffff;
+  --app-info-box: #111827;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+  font-size: 16px;
+  color: var(--app-gray-600);
+  background-color: white;
+}
+
+.inner-body {
+  width: calc((1184 / 1440) * 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: Heebo;
+  src: url(./styles/fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+  font-family: Heebo-bold;
+  src: url(./styles/fonts/Heebo-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./styles/fonts/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(./styles/fonts/Inter_18pt-Bold.ttf);
+}
+
+.clickable-icon {
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clickable-icon:hover {
+  background-color: var(--app-gray-200);
+}
+
+.clickable-icon:active {
+  background-color: var(--app-gray-100);
+}
+
+#infotag {
+  display: inline-flex;
+  font-family: Inter;
+  background-color: var(--app-gray-200);
+  color: var(--app-gray-600);
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  gap: 32px;
+}
+
+#infobox-aboutme {
+  background-color: var(--app-gray-default);
+}
+
+#infobox-projects {
+  background-color: var(--app-info-box);
+}
+
+#infobox-left {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#infobox-left img {
+  max-width: 90%;
+}
+
+#infobox-mid {
+  width: 50%;
+}
+
+#infobox-mid-header {
+  font-size: 20px;
+  font-family: Inter-Bold;
+}
+
+#infobox-mid-bullets {
+}
+
+#infobox-mid-bullets ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+#infobox-mid-bullets li {
+  margin-bottom: 10px;
+}
+
+#infobox-right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#open-wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+#open {
+  width: 35px;
+  height: 35px;
+}
+
+#skill-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#skill-icon img {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#skill-icon img:hover {
+  transform: scale(1.1);
+}
+
+#skill-icon img:active {
+  transform: scale(0.9);
+}

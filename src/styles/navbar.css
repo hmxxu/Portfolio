@@ -1,0 +1,91 @@
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 30;
+  background-color: var(--app-gray-default);
+  position: fixed;
+}
+
+#nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+#nav-menu-left {
+  color: var(--app-gray-900);
+  font-family: Inter-Bold;
+  font-size: 36px;
+  white-space: nowrap;
+}
+
+#nav-menu-right {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+#nav-menu-right-scenes {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+
+#nav-menu-right-divider {
+  width: 1px;
+  height: 30px;
+  background-color: var(--app-gray-100);
+}
+
+#sun {
+  height: 25px;
+  width: 25px;
+}
+
+#nav-menu-right-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+
+.nav-menu-item {
+  font-family: Inter;
+  color: var(--app-gray-600);
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-menu-item.active {
+  color: var(--app-gray-950);
+}
+
+#resume-button {
+  background-color: var(--app-gray-900);
+  border: none;
+  color: var(--app-gray-50);
+  font-family: Inter;
+  font-size: 20px;
+  width: 208px;
+  height: 47px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#resume-button:hover {
+  background-color: var(--app-gray-600);
+}
+
+#resume-button:active {
+  background-color: var(--app-gray-800);
+}

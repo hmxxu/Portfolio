@@ -1,0 +1,26 @@
+#skills-body {
+  background-color: var(--app-gray-50);
+}
+
+#skills-inner-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.skill-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+}

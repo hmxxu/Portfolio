@@ -1,0 +1,33 @@
+#project-body {
+  background-color: var(--app-gray-default);
+}
+
+#projects-inner-body {
+  width: 50%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#projects-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#projects-top-text {
+  font-family: Inter;
+  font-size: 32px;
+  text-align: center;
+}
+
+#project-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
