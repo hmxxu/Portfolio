@@ -1,7 +1,7 @@
 {
-  "homepage": "https://hmxxu.github.io/Portfolio",
   "name": "typescript-react-portfolio",
   "private": true,
+  "homepage": "https://hmxxu.github.io/Portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
