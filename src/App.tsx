@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef } from "react";
 import "./App.css";
 import { DarkModeProvider } from "./DarkModeContext";
 import Navbar from "./scenes/Navbar";
