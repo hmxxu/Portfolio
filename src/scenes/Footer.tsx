@@ -2,9 +2,12 @@ import "../styles/footer.css";
 import { useDarkMode } from "../DarkModeContext";
 import up from "../assets/up.svg";
 import upDark from "../assets/upDark.svg";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Footer() {
   const { isDarkMode } = useDarkMode();
+  const isAboveMediumScreens = useMediaQuery("(min-width: 768px)");
+
   return (
     <div id="footer-body">
       <div id="footer-inner-body" className="inner-body">
@@ -21,7 +24,7 @@ export default function Footer() {
         Last Updated 10/24
         <div id="footer-divider" />
         <div id="up">
-          Back to Top of Page{" "}
+          {isAboveMediumScreens && "Back to Top"}
           <img
             src={isDarkMode ? upDark : up}
             className="clickable-icon"

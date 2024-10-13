@@ -9,6 +9,7 @@ import linkedinDark from "../assets/linkedinDark.svg";
 
 export default function Contact() {
   const { isDarkMode } = useDarkMode();
+
   return (
     <div id="contact-body">
       <div id="contact-inner-body" className="inner-body">

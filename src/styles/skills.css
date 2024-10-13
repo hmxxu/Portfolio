@@ -23,4 +23,8 @@
   flex-direction: row;
   justify-content: center;
   gap: 5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
 }

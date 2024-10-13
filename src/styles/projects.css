@@ -3,7 +3,7 @@
 }
 
 #projects-inner-body {
-  width: 50%;
+  width: 1000px;
   padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
@@ -30,4 +30,11 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+}
+
+@media (max-width: 1280px) {
+  #projects-inner-body {
+    width: 90%;
+    flex-direction: column;
+  }
 }

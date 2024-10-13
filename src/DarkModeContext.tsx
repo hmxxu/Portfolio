@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 // Create the context for dark mode
 interface DarkModeContextProps {
   isDarkMode: boolean;
-  toggleDarkMode: () => void;
+  toggleDarkMode: (boo: boolean) => void;
 }
 
 const DarkModeContext = createContext<DarkModeContextProps | undefined>(
@@ -21,7 +21,13 @@ export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 
   // Toggle dark mode
-  const toggleDarkMode = () => {
+  const toggleDarkMode = (boo: boolean) => {
+    if (boo) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
     setIsDarkMode(!isDarkMode);
   };
 
@@ -32,7 +38,7 @@ export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [isDarkMode]);
+  }, []);
 
   return (
     <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>

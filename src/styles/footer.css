@@ -3,6 +3,7 @@
 }
 
 #footer-inner-body {
+  font-size: 12px;
   display: flex;
   flex-direction: row;
   gap: 1rem;

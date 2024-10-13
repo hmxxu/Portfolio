@@ -43,22 +43,13 @@ body {
   font-size: 16px;
   color: var(--app-gray-600);
   background-color: white;
+  overflow-x: hidden;
 }
 
 .inner-body {
-  width: calc((1184 / 1440) * 100%);
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-@font-face {
-  font-family: Heebo;
-  src: url(./styles/fonts/Heebo-Regular.ttf);
-}
-
-@font-face {
-  font-family: Heebo-bold;
-  src: url(./styles/fonts/Heebo-Bold.ttf);
 }
 
 @font-face {
@@ -99,73 +90,6 @@ body {
   margin-right: auto;
 }
 
-.infobox {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  justify-content: space-between;
-  gap: 32px;
-}
-
-#infobox-aboutme {
-  background-color: var(--app-gray-default);
-}
-
-#infobox-projects {
-  background-color: var(--app-info-box);
-}
-
-#infobox-left {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#infobox-left img {
-  max-width: 90%;
-}
-
-#infobox-mid {
-  width: 50%;
-}
-
-#infobox-mid-header {
-  font-size: 20px;
-  font-family: Inter-Bold;
-}
-
-#infobox-mid-bullets {
-}
-
-#infobox-mid-bullets ul {
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
-#infobox-mid-bullets li {
-  margin-bottom: 10px;
-}
-
-#infobox-right {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#open-wrapper {
-  display: flex;
-  justify-content: right;
-}
-
-#open {
-  width: 35px;
-  height: 35px;
-}
-
 #skill-icon {
   display: flex;
   flex-direction: column;
@@ -187,4 +111,22 @@ body {
 
 #skill-icon img:active {
   transform: scale(0.9);
+}
+
+@media (max-width: 1024px) {
+  .inner-body {
+    width: 90%;
+  }
+
+  #skill-icon img {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  #skill-icon img {
+    height: 50px;
+    width: 50px;
+  }
 }
