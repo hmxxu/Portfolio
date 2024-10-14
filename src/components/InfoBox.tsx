@@ -30,7 +30,7 @@ export default function InfoBox({
   const popIn = (delay: number) => ({
     initial: "hidden",
     whileInView: "visible",
-    viewport: { once: true, amount: 0.5 },
+    viewport: { once: true, amount: 0.2 },
     variants: {
       hidden: { opacity: 0, scale: 0.9 },
       visible: {
@@ -38,7 +38,7 @@ export default function InfoBox({
         scale: 1,
         transition: {
           delay,
-          duration: 0.2,
+          duration: 0.5,
         },
       },
     },
@@ -52,11 +52,11 @@ export default function InfoBox({
         id={project ? "infobox-projects" : "infobox-aboutme"}
       >
         {/* Left: Image */}
-        <motion.div id="infobox-left" {...popIn(0.1)}>
+        <motion.div id="infobox-left" {...popIn(0.05)}>
           <img src={image} alt="image2" id="image" />
         </motion.div>
         {/* Mid: Header and Description */}
-        <motion.div id="infobox-mid" {...popIn(0.2)}>
+        <motion.div id="infobox-mid" {...popIn(0.1)}>
           <div id="infobox-mid-header">{header}</div>
           <div id="infobox-mid-bullets">
             <ul>
@@ -68,7 +68,7 @@ export default function InfoBox({
           </div>
         </motion.div>
         {/* Right: Time and Link */}
-        <motion.div id="infobox-right" {...popIn(0.3)}>
+        <motion.div id="infobox-right" {...popIn(0.15)}>
           <div>{date}</div>
           {link && (
             <div id="open-wrapper">
@@ -92,11 +92,11 @@ export default function InfoBox({
       id={project ? "infobox-projects" : "infobox-aboutme"}
     >
       {/* Top: image */}
-      <motion.div id="infobox-small-top" {...popIn(0.2)}>
+      <motion.div id="infobox-small-top" {...popIn(0)}>
         <img src={image} alt="image2" id="image" />
       </motion.div>
       {/* Mid: Time and Link */}
-      <motion.div id="infobox-small-mid" {...popIn(0.2)}>
+      <motion.div id="infobox-small-mid" {...popIn(0)}>
         <div id="infobox-small-mid-left">{date}</div>
         {link && (
           <div id="open-wrapper">
@@ -111,7 +111,7 @@ export default function InfoBox({
         )}
       </motion.div>
       {/* Bot: Header and Description */}
-      <motion.div id="infobox-small-bot" {...popIn(0.2)}>
+      <motion.div id="infobox-small-bot" {...popIn(0)}>
         <div id="infobox-mid-header">{header}</div>
         <div id="infobox-mid-bullets">
           <ul>

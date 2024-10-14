@@ -16,7 +16,7 @@ export default function Intro() {
     initial: "hidden",
     whileInView: "visible",
     transition: { delay, duration: 0.5 },
-    viewport: { once: true, amount: 0.5 },
+    viewport: { once: true, amount: 0.2 },
     variants: {
       hidden: { opacity: 0, x: direction === "left" ? -50 : 50 },
       visible: { opacity: 1, x: 0 },
@@ -33,7 +33,7 @@ export default function Intro() {
             <motion.div id="intro-left-text-main" {...fadeIn(0, "left")}>
               Hi, I'm HaoMing👋
             </motion.div>
-            <motion.div id="intro-left-text-desc" {...fadeIn(0.1, "left")}>
+            <motion.div id="intro-left-text-desc" {...fadeIn(0.05, "left")}>
               I am a full-stack developer specializing in front end engineering,
               with expertise in React and Node.js. I recently graduated from the
               University of Washington and am currently interning while actively
@@ -41,7 +41,7 @@ export default function Intro() {
             </motion.div>
 
             {/* Location + Work status */}
-            <motion.div id="intro-left-info" {...fadeIn(0.2, "left")}>
+            <motion.div id="intro-left-info" {...fadeIn(0.1, "left")}>
               <div className="intro-left-info-item">
                 <img
                   src={isDarkMode ? locationDark : location}
@@ -58,7 +58,7 @@ export default function Intro() {
               </div>
             </motion.div>
             {/* Links */}
-            <motion.div id="intro-left-links" {...fadeIn(0.3, "left")}>
+            <motion.div id="intro-left-links" {...fadeIn(0.15, "left")}>
               <img
                 src={isDarkMode ? githubDark : github}
                 className="clickable-icon"
@@ -79,7 +79,7 @@ export default function Intro() {
           </div>
         </div>
         {/* Right side + Pic and shadow */}
-        <motion.div id="pic-wrapper" {...fadeIn(0.2, "right")}>
+        <motion.div id="pic-wrapper" {...fadeIn(0.1, "right")}>
           <img src={pic} id="pic" alt="pic" />
           <div id="img-shadow" />
         </motion.div>
