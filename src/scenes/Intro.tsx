@@ -16,7 +16,7 @@ export default function Intro() {
     initial: "hidden",
     whileInView: "visible",
     transition: { delay, duration: 0.5 },
-    viewport: { once: true, amount: 0.2 },
+    viewport: { once: true, amount: 0 },
     variants: {
       hidden: { opacity: 0, x: direction === "left" ? -50 : 50 },
       visible: { opacity: 1, x: 0 },
