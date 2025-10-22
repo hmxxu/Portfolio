@@ -28,8 +28,13 @@
 }
 
 #infobox-mid-header {
-  font-size: 20px;
+  font-size: 25px;
   font-family: Inter-Bold;
+}
+
+#infobox-mid-desc {
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 #infobox-mid-bullets {

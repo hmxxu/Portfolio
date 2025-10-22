@@ -21,7 +21,7 @@ export default function Footer() {
           Design by Sagar Shah
         </a>
         <div id="footer-divider" />
-        Last Updated 10/24
+        Last Updated 10/25
         <div id="footer-divider" />
         <div id="up">
           {isAboveMediumScreens && "Back to Top"}

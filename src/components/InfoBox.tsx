@@ -8,6 +8,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 interface infoBoxProps {
   image: string;
   header: string;
+  desc?: string;
   bullets: string[];
   addition?: string;
   date: string;
@@ -18,6 +19,7 @@ interface infoBoxProps {
 export default function InfoBox({
   image,
   header,
+  desc,
   bullets,
   addition,
   date,
@@ -58,6 +60,7 @@ export default function InfoBox({
         {/* Mid: Header and Description */}
         <motion.div id="infobox-mid" {...popIn(0.1)}>
           <div id="infobox-mid-header">{header}</div>
+          <div id="infobox-mid-desc">{desc}</div>
           <div id="infobox-mid-bullets">
             <ul>
               {bullets.map((element, index) => (
@@ -113,6 +116,7 @@ export default function InfoBox({
       {/* Bot: Header and Description */}
       <motion.div id="infobox-small-bot" {...popIn(0)}>
         <div id="infobox-mid-header">{header}</div>
+        <div id="infobox-mid-desc">{desc}</div>
         <div id="infobox-mid-bullets">
           <ul>
             {bullets.map((element, index) => (

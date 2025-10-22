@@ -56,7 +56,7 @@ export default function Aboutme() {
               header="Software Developer"
               bullets={amBullets}
               addition={amAddition}
-              date="June 2024 – Present"
+              date="Jun. 2024 – Oct. 2024"
               link="https://www.linkedin.com/company/applied-metadata/"
             />
           </div>
@@ -67,7 +67,7 @@ export default function Aboutme() {
               header="University of Washington"
               bullets={uwBullets}
               addition={uwAddition}
-              date="Sept. 2021 – June 2024"
+              date="Sept. 2021 – Jun. 2024"
               link="https://www.washington.edu/"
             />
           </div>

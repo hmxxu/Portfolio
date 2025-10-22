@@ -13,6 +13,7 @@ import nodejs from "../assets/skills-icons/nodejs.png";
 import expressjs from "../assets/skills-icons/expressjs.png";
 import git from "../assets/skills-icons/git.png";
 import langchain from "../assets/skills-icons/langchain.svg";
+import expo from "../assets/skills-icons/expo.png";
 
 export default function Skills() {
   return (
@@ -59,6 +60,7 @@ export default function Skills() {
               name="LangChain"
               link="https://www.langchain.com/"
             />
+            <SkillIcon img={expo} name="Expo" link="https://expo.dev/go" />
           </div>
         </div>
       </div>
